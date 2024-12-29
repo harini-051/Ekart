@@ -11,10 +11,12 @@
 
 <div class="container">
 
-    <div th:replace="/fragments/products :: products"/>
-
-    <div th:replace="/fragments/pagination :: pagination(URLparameter='/home')"/>
-
+    <div class="container">
+        <h2 style="text-align: center; margin-top: 20px;">Welcome to ClickOps Technologies</h2>
+        <div th:replace="/fragments/products :: products"></div>
+        <div th:replace="/fragments/pagination :: pagination(URLparameter='/home')"></div>
+    </div>
+    
 </div>
 
 <div th:replace="/fragments/footer :: footer"/>
